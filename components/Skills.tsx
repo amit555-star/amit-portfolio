@@ -8,20 +8,20 @@ const Skills: React.FC = () => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
+        staggerChildren: 0.1, // Stagger for one-by-one effect
+        delayChildren: 0.2
       }
     }
   };
 
   const item: Variants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, scale: 0.5 }, // Start zoomed out
     show: { 
       opacity: 1, 
-      y: 0,
+      scale: 0.8,
       transition: {
-        type: "spring",
-        stiffness: 260,
-        damping: 20
+        duration: 0.6,
+        ease: "easeOut" // Smooth zoom
       }
     }
   };
@@ -47,6 +47,7 @@ const Skills: React.FC = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
+            transition={{ duration: 0.5 }}
             className="text-3xl md:text-4xl font-bold text-slate-900 mb-4"
           >
             Technical Skills
@@ -64,7 +65,7 @@ const Skills: React.FC = () => {
           variants={container}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false }}
+          viewport={{ once: false, margin: "-50px" }}
           className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto"
         >
           {SKILLS.map((skill) => (
@@ -87,7 +88,7 @@ const Skills: React.FC = () => {
                         className="w-10 h-10 object-contain"
                     />
                   ) : (
-                     <span className="font-bold text-lg text-primary">{skill.name.charAt(0)}</span>
+                    <span className="font-bold text-lg text-primary">{skill.name.charAt(0)}</span>
                   )}
               </div>
 
