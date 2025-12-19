@@ -43,7 +43,7 @@ export const PROJECTS: Project[] = [
     features: ["Turn-based logic", "Win detection", "Board reset functionality"],
     liveLink: "https://amit555-star.github.io/TicTacToe/",
     repoLink: "https://github.com/amit555-star/TicTacToe",
-    image: "https://picsum.photos/800/600?random=3"
+    image: "images/tic-tac-toe.png"
   },
   {
     id: 4,
