@@ -1,20 +1,90 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Amit Kumar Chaudhary – Personal Portfolio
 
-# Run and deploy your AI Studio app
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-blue?logo=tailwind-css)
+![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)
 
-This contains everything you need to run your app locally.
+Welcome to my personal portfolio! This project showcases my web development skills, projects, and contact information. Built using **React, TypeScript, Tailwind CSS**, and deployed on **Vercel**.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1sTBk9L--ZBPNWJ0LbdQdi0utnW9HAIYN
+---
 
-## Run Locally
+## 🌐 Live Demo
+Check out the live site here: [Portfolio](https://amit-portfolio-amber.vercel.app/)
 
-**Prerequisites:**  Node.js
+![Portfolio Screenshot](public/images/screenshot.png)
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🛠 Tech Stack
+- **Frontend:** React, TypeScript, Tailwind CSS
+- **Animations:** Framer Motion
+- **Deployment:** Vercel
+- **Other Tools:** EmailJS (for contact form)
+
+---
+
+## 💻 Features
+- Fully **responsive design** for mobile, tablet, and desktop
+- **Smooth scrolling and animations** for interactive experience
+- **Contact form** integrated with EmailJS to send emails directly
+- **Projects section** with live demos and GitHub links
+- **Tech stack section** showing skills clearly
+
+---
+
+## 📂 Project Structure
+portfolio/
+├─ public/
+│ └─ images/ # All static images and screenshots
+├─ src/
+│ ├─ components/ # React components
+│ ├─ App.tsx # Main App component
+│ └─ index.tsx # Entry point
+├─ package.json
+├─ tsconfig.json
+└─ vite.config.ts
+
+yaml
+Copy code
+
+---
+
+## 📁 Projects
+
+### **Portfolio Website**
+- **Live Demo:** [https://amit-portfolio-amber.vercel.app/](https://amit-portfolio-amber.vercel.app/)
+- **Technologies:** React, TypeScript, Tailwind CSS, Framer Motion
+- **Description:** A personal portfolio showcasing projects, skills, and a contact form integrated with EmailJS. Fully responsive, smooth animations, and deployed on Vercel.
+- **GitHub Repo:** [https://github.com/YOUR_USERNAME/portfolio](https://github.com/YOUR_USERNAME/portfolio)
+
+> *You can add additional projects here in the same format.*
+
+---
+
+## 🚀 Getting Started
+To run the project locally:
+
+1. Clone the repository:
+git clone https://github.com/amit555-star/amit-portfolio
+
+2. Navigate to the project folder:
+cd portfolio
+
+3. Install dependencies:
+npm install
+
+4. Start the development server:
+npm run dev
+
+5. Open your browser at http://localhost:5173 (Vite default port)
+
+📧 Contact
+
+You can reach me via the contact form on the portfolio or directly at:
+
+Email: chaudahry004@gmail.com
+
+LinkedIn: Amit Kumar Chaudhary
+
+GitHub: @amit555-star
