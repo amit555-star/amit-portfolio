@@ -12,7 +12,7 @@ Welcome to my personal portfolio! This project showcases my web development skil
 ## 🌐 Live Demo
 Check out the live site here: [Portfolio](https://amit-portfolio-amber.vercel.app/)
 
-![Portfolio Screenshot](public/images/screenshot.png)
+![Portfolio Screenshot](public/images/amit-portfolio.png)
 
 ---
 
