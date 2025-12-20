@@ -213,7 +213,7 @@ const Hero: React.FC = () => {
                 y: { duration: 5, repeat: Infinity, ease: "easeInOut" },
                 boxShadow: { duration: 0.3 }
               }}
-              src="/images/amits.png" 
+              src={PERSONAL_INFO.profileImage}
               alt="Amit Kumar Chaudhary" 
               className="w-[60vw] md:w-[28vw] max-w-[400px] aspect-square mr-6 rounded-full object-cover relative z-10 bg-slate-50"
             />

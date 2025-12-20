@@ -6,8 +6,8 @@ export const PERSONAL_INFO = {
   tagline: "I'm a", // Used as prefix for typing animation
   about: "Frontend-focused web developer building responsive, user-friendly interfaces with HTML, CSS, JavaScript, React, and Tailwind. Passionate about clean UI, smooth interactions, and continuous learning.",
   email: "chaudahry004@gmail.com",
-  profileImage: "https://picsum.photos/600/600?grayscale", 
-  aboutImage: "https://picsum.photos/600/600?grayscale",
+  profileImage: "images/amits.png", 
+  aboutImage: "images/about.jpg",
   socials: {
     github: "https://github.com/amit555-star",
     linkedin: "https://linkedin.com/in/amitkumarchy",
@@ -82,7 +82,7 @@ export const EDUCATION: Education[] = [
     id: 2,
     degree: "Piscine Program",
     institution: "42 Abu Dhabi School",
-    status: "Upcoming",
+    status: "Completed",
     year: "Apr 2025 - May 2025"
   },
   {
