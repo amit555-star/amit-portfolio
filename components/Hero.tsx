@@ -105,7 +105,7 @@ const Hero: React.FC = () => {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center pt-24 pb-12 bg-slate-50 overflow-hidden px-6 md:px-12 lg:px-20 relative"
+      className="min-h-screen flex items-center justify-center pt-24 pb-12 bg-indigo-50 overflow-hidden px-6 md:px-12 lg:px-20 relative"
     >
      {/* Dust Particles Background */}
     <DustParticles />
@@ -122,7 +122,7 @@ const Hero: React.FC = () => {
           >
             
             {/* Enhanced Heading */}
-            <h1 className="text-5xl md:text-5xl font-bold text-slate-900 leading-tight mb-6 tracking-tight">
+            <h1 className="text-5xl md:text-5xl font-bold text-heading-900 leading-tight mb-6 tracking-tight">
               Hi, It's <span className="text-primary md:text-6xl pl-3 relative inline-block">
                 Amit.
                 {/* Ambient Glow */}
@@ -134,7 +134,7 @@ const Hero: React.FC = () => {
               </span>
             </h1>
             
-            <h3 className="text-xl md:text-3xl font-medium text-slate-600 mb-6 flex items-center h-[1.5em] overflow-hidden">
+            <h3 className="text-xl md:text-3xl font-medium text-text-600 mb-6 flex items-center h-[1.5em] overflow-hidden">
               <span className="mr-2 whitespace-nowrap">{PERSONAL_INFO.tagline}</span>
               <span className="text-primary font-bold relative">
                 {text}
@@ -142,15 +142,15 @@ const Hero: React.FC = () => {
               </span>
             </h3>
             
-            <p className="text-base lg:text-lg font-normal text-slate-600 leading-relaxed max-w-xl mb-8">
+            <p className="text-base lg:text-lg font-normal text-text-600 leading-relaxed max-w-xl mb-8">
               {PERSONAL_INFO.about}
             </p>
             
             <div className="flex gap-4 mb-10">
-              <a href={PERSONAL_INFO.socials.linkedin} target="_blank" rel="noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-100 text-primary border border-primary shadow-[0_0_15px_rgba(0,255,238,0.3)] hover:bg-primary hover:text-slate-50 hover:shadow-[0_0_20px_rgba(0,255,238,0.5)] transition-all duration-300">
+              <a href={PERSONAL_INFO.socials.linkedin} target="_blank" rel="noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full bg-border-100 text-primary border border-primary shadow-[0_0_15px_rgba(0,255,238,0.3)] hover:bg-primary hover:text-main-bg hover:shadow-[0_0_20px_rgba(0,255,238,0.5)] transition-all duration-300">
                 <Linkedin size={20} />
               </a>
-              <a href={PERSONAL_INFO.socials.github} target="_blank" rel="noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-100 text-primary border border-primary shadow-[0_0_15px_rgba(0,255,238,0.3)] hover:bg-primary hover:text-slate-50 hover:shadow-[0_0_20px_rgba(0,255,238,0.5)] transition-all duration-300">
+              <a href={PERSONAL_INFO.socials.github} target="_blank" rel="noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full bg-border-100 text-primary border border-primary shadow-[0_0_15px_rgba(0,255,238,0.3)] hover:bg-primary hover:text-main-bg hover:shadow-[0_0_20px_rgba(0,255,238,0.5)] transition-all duration-300">
                 <Github size={20} />
               </a>
             </div>
@@ -159,14 +159,14 @@ const Hero: React.FC = () => {
               <a 
                 href="/Amit_Kumar_Chaudhary_CV.pdf" 
                 download
-                className="flex items-center gap-2 px-6 py-3 bg-primary text-slate-50 rounded-lg text-base font-bold shadow-soft hover:shadow-glow hover:bg-slate-50 hover:text-primary transition-all duration-300 transform hover:-translate-y-0.5 border border-primary"
+                className="flex items-center gap-2 px-6 py-3 bg-primary text-indigo-50 rounded-lg text-main-bg font-bold shadow-soft hover:shadow-glow hover:bg-main-bg hover:text-primary transition-all duration-300 transform hover:-translate-y-0.5 border border-primary"
               >
                 <FileText size={18} />
                 Download CV
               </a>
               <a 
                 href="#contact" 
-                className="flex items-center gap-2 px-6 py-3 bg-slate-100 text-slate-900 border border-slate-200 rounded-lg text-base font-medium hover:border-primary hover:text-primary transition-all duration-300"
+                className="flex items-center gap-2 px-6 py-3 bg-border-100 text-heading-900 border border-border-200 rounded-lg text-heading-900 font-medium hover:border-primary hover:text-primary transition-all duration-300"
               >
                 Contact Me
                 <ArrowRight size={18} />
@@ -215,7 +215,7 @@ const Hero: React.FC = () => {
               }}
               src={PERSONAL_INFO.profileImage}
               alt="Amit Kumar Chaudhary" 
-              className="w-[60vw] md:w-[28vw] max-w-[400px] aspect-square mr-6 rounded-full object-cover relative z-10 bg-slate-50"
+              className="w-[60vw] md:w-[28vw] max-w-[400px] aspect-square mr-6 rounded-full object-cover relative z-10 bg-indigo-50"
             />
             </motion.div>
         </div>

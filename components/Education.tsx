@@ -12,7 +12,7 @@ const Education: React.FC = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
-            className="text-3xl md:text-4xl font-bold text-slate-900 mb-4"
+            className="text-3xl md:text-4xl font-bold text-heading-900 mb-4"
           >
             Education
           </motion.h2>
@@ -32,7 +32,7 @@ const Education: React.FC = () => {
             whileInView={{ height: '100%' }}
             viewport={{ once: false }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
-            className="absolute left-4 top-4 bottom-4 w-0.5 bg-slate-200 hidden md:block origin-top"
+            className="absolute left-4 top-4 bottom-4 w-0.5 bg-border-200 hidden md:block origin-top"
           ></motion.div>
 
           {EDUCATION.map((edu, index) => (
@@ -46,7 +46,7 @@ const Education: React.FC = () => {
                 x: 10,
                 boxShadow: "0 0 20px rgba(0, 255, 238, 0.4), 0 15px 25px -5px rgba(0, 255, 238, 0.3)"
               }}
-              className="relative md:ml-12 bg-slate-100 p-6 md:p-8 rounded-xl border border-slate-200 shadow-sm hover:border-primary transition-all duration-300"
+              className="relative md:ml-12 bg-border-100 p-6 md:p-8 rounded-xl border border-border-200 shadow-sm hover:border-primary transition-all duration-300"
             >
               {/* Dot on line */}
               <motion.div 
@@ -54,7 +54,7 @@ const Education: React.FC = () => {
                 whileInView={{ scale: 1 }}
                 viewport={{ once: false }}
                 transition={{ delay: 0.2 + (index * 0.2), type: "spring" }}
-                className="absolute -left-[55px] top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-slate-50 border-4 border-slate-200 hidden md:flex items-center justify-center z-10"
+                className="absolute -left-[55px] top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-main-bg border-4 border-border-200 hidden md:flex items-center justify-center z-10"
               >
                   <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
               </motion.div>
@@ -65,17 +65,17 @@ const Education: React.FC = () => {
                     <GraduationCap size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900">
+                    <h3 className="text-xl font-bold text-heading-900">
                         {edu.degree}
                     </h3>
-                    <p className="text-lg text-slate-600 mt-1 font-medium">{edu.institution}</p>
-                    <span className="inline-block mt-2 px-3 py-1 bg-slate-50 text-xs font-semibold tracking-wide rounded-full text-slate-500 border border-slate-200">
+                    <p className="text-lg text-text-600 mt-1 font-medium">{edu.institution}</p>
+                    <span className="inline-block mt-2 px-3 py-1 bg-main-bg text-xs font-semibold tracking-wide rounded-full text-text-500 border border-border-200">
                       {edu.status}
                     </span>
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-2 text-sm font-bold text-primary bg-slate-50 px-4 py-2 rounded-lg border border-slate-200 whitespace-nowrap shadow-sm">
+                <div className="flex items-center gap-2 text-sm font-bold text-primary bg-main-bg px-4 py-2 rounded-lg border border-border-200 whitespace-nowrap shadow-sm">
                   <Calendar size={16} />
                   {edu.year}
                 </div>

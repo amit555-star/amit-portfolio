@@ -34,7 +34,7 @@ const ThemeToggle: React.FC = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full bg-gray-200 dark:bg-slate-700 text-gray-800 dark:text-yellow-400 transition-colors focus:outline-none focus:ring-2 focus:ring-primary"
+      className="p-2 rounded-full bg-gray-200 dark:bg-text-700 text-gray-800 dark:text-yellow-400 transition-colors focus:outline-none focus:ring-2 focus:ring-primary"
       aria-label="Toggle Dark Mode"
     >
       <motion.div

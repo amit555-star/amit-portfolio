@@ -60,14 +60,14 @@ const Navbar: React.FC = () => {
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${
         scrolled
-          ? 'bg-slate-50/90 backdrop-blur-md shadow-sm py-6 border-slate-200/50'
+          ? 'bg-main-bg/90 backdrop-blur-md shadow-sm py-6 border-border-200/50'
           : 'bg-transparent py-8 border-transparent'
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         <motion.a 
           href="#home" 
-          className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight flex items-center gap-1 group"
+          className="text-3xl md:text-4xl font-bold text-heading-900 tracking-tight flex items-center gap-1 group"
           whileHover="hover"
         >
           <motion.div
@@ -116,7 +116,7 @@ const Navbar: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 + (i * 0.1) }}
               className={`text-base font-medium transition-colors relative group ${
-                activeSection === link.name ? 'text-primary' : 'text-slate-600 hover:text-primary'
+                activeSection === link.name ? 'text-primary' : 'text-text-600 hover:text-primary'
               }`}
             >
               {link.name}
@@ -131,7 +131,7 @@ const Navbar: React.FC = () => {
         <div className="md:hidden flex items-center">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-slate-900 hover:text-primary focus:outline-none transition-colors"
+            className="text-heading-900 hover:text-primary focus:outline-none transition-colors"
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -145,7 +145,7 @@ const Navbar: React.FC = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-slate-100 border-b border-slate-200 shadow-xl overflow-hidden"
+            className="md:hidden bg-border-100 border-b border-border-200 shadow-xl overflow-hidden"
           >
             <div className="px-6 py-8 flex flex-col space-y-6 text-center">
               {navLinks.map((link) => (
@@ -154,7 +154,7 @@ const Navbar: React.FC = () => {
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   className={`text-lg font-medium transition-colors ${
-                    activeSection === link.name ? 'text-primary' : 'text-slate-900 hover:text-primary'
+                    activeSection === link.name ? 'text-primary' : 'text-heading-900 hover:text-primary'
                   }`}
                 >
                   {link.name}

@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ delay: 0.1 }}
-            className="text-3xl md:text-4xl font-bold text-slate-900 mb-4"
+            className="text-3xl md:text-4xl font-bold text-heading-900 mb-4"
           >
             Featured Projects
           </motion.h2>
@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ delay: 0.2 }}
-            className="text-slate-600 max-w-2xl mx-auto"
+            className="text-text-600 max-w-2xl mx-auto"
           >
             A selection of my recent work focusing on functionality and design.
           </motion.p>
@@ -57,10 +57,10 @@ const Projects: React.FC = () => {
                   <div className="absolute top-4 left-4 w-full h-full border-2 border-primary/20 rounded-2xl -z-10 transform translate-x-2 translate-y-2 transition-transform duration-500 group-hover:translate-x-4 group-hover:translate-y-4"></div>
                   
                   {/* Glow Effect - Removed Purple */}
-                  <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-slate-100/10 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+                  <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-border-100/10 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
                   
                   {/* Main Image */}
-                  <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-100 z-10 transform transition-transform duration-500 group-hover:-translate-y-2 aspect-video">
+                  <div className="relative rounded-2xl overflow-hidden shadow-lg border border-border-200 bg-border-100 z-10 transform transition-transform duration-500 group-hover:-translate-y-2 aspect-video">
                     <img
                       src={project.image}
                       alt={project.title}
@@ -81,11 +81,11 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
                 
-                <h3 className="text-3xl font-bold text-slate-900">
+                <h3 className="text-3xl font-bold text-heading-900">
                   {project.title}
                 </h3>
                 
-                <p className="text-slate-600 text-lg leading-relaxed">
+                <p className="text-text-600 text-lg leading-relaxed">
                   {project.description}
                 </p>
 
@@ -97,7 +97,7 @@ const Projects: React.FC = () => {
                           whileInView={{ opacity: 1, x: 0 }}
                           viewport={{ once: false }}
                           transition={{ delay: 0.3 + (i * 0.1) }}
-                          className="flex items-start gap-3 text-slate-600"
+                          className="flex items-start gap-3 text-text-600"
                         >
                             <div className="mt-1 p-0.5 rounded-full bg-indigo-50 text-primary">
                                 <Check size={14} />
@@ -114,7 +114,7 @@ const Projects: React.FC = () => {
                     rel="noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center gap-2 px-6 py-2.5 bg-primary text-slate-50 font-bold rounded-lg shadow-soft hover:shadow-glow hover:bg-slate-50 hover:text-primary transition-all duration-300 border border-primary"
+                    className="flex items-center gap-2 px-6 py-2.5 bg-primary text-main-bg font-bold rounded-lg shadow-soft hover:shadow-glow hover:bg-main-bg hover:text-primary transition-all duration-300 border border-primary"
                   >
                     <ExternalLink size={18} />
                     Live Demo
@@ -125,7 +125,7 @@ const Projects: React.FC = () => {
                     rel="noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center gap-2 px-6 py-2.5 bg-slate-100 text-slate-600 border border-slate-200 font-medium rounded-lg hover:border-primary hover:text-primary transition-colors shadow-sm hover:shadow-md"
+                    className="flex items-center gap-2 px-6 py-2.5 bg-border-100 text-text-600 border border-border-200 font-medium rounded-lg hover:border-primary hover:text-primary transition-colors shadow-sm hover:shadow-md"
                   >
                     <Github size={18} />
                     Code

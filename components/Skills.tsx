@@ -48,7 +48,7 @@ const Skills: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl font-bold text-slate-900 mb-4"
+            className="text-3xl md:text-4xl font-bold text-heading-900 mb-4"
           >
             Technical Skills
           </motion.h2>
@@ -78,9 +78,9 @@ const Skills: React.FC = () => {
                 // Cyan outline glow + Cyan bottom shadow
                 boxShadow: "0 0 20px rgba(0, 255, 238, 0.4), 0 15px 25px -5px rgba(0, 255, 238, 0.3)"
               }}
-              className="group p-6 bg-slate-100 rounded-xl border border-slate-200 hover:border-primary shadow-sm transition-all duration-300 flex flex-col items-center justify-center text-center cursor-default"
+              className="group p-6 bg-border-100 rounded-xl border border-border-200 hover:border-primary shadow-sm transition-all duration-300 flex flex-col items-center justify-center text-center cursor-default"
             >
-              <div className="w-16 h-16 mb-4 bg-indigo-50 rounded-full flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
+              <div className="w-16 h-16 mb-4 bg-indigo-50 rounded-full flex items-center justify-center group-hover:bg-border-200 transition-colors duration-300">
                   {skillIcons[skill.name] ? (
                     <img 
                         src={skillIcons[skill.name]} 
@@ -92,11 +92,11 @@ const Skills: React.FC = () => {
                   )}
               </div>
 
-              <div className="font-semibold text-lg text-slate-800 group-hover:text-primary transition-colors mb-2">
+              <div className="font-semibold text-lg text-sub-head-800 group-hover:text-primary transition-colors mb-2">
                 {skill.name}
               </div>
               
-              <span className="text-xs font-medium text-slate-600 uppercase tracking-widest bg-slate-50 px-3 py-1 rounded-full group-hover:bg-indigo-50 group-hover:text-primary transition-colors border border-slate-200">
+              <span className="text-xs font-medium text-text-600 uppercase tracking-widest bg-main-bg px-3 py-1 rounded-full group-hover:bg-indigo-50 group-hover:text-primary transition-colors border border-border-200">
                 {skill.category}
               </span>
             </motion.div>

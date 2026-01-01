@@ -5,14 +5,14 @@ import { PERSONAL_INFO } from '../constants';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="bg-[#131313] pt-24 pb-24 border-t border-slate-200 overflow-hidden">
+    <section id="contact" className="bg-[#131313] pt-24 pb-24 border-t border-border-200 overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
-            className="text-3xl md:text-4xl font-bold text-slate-900 mb-4"
+            className="text-3xl md:text-4xl font-bold text-heading-900 mb-4"
           >
             Get In Touch
           </motion.h2>
@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: false }}
             transition={{ delay: 0.2 }}
-            className="mt-6 text-slate-600 max-w-xl mx-auto text-lg"
+            className="mt-6 text-text-600 max-w-xl mx-auto text-lg"
           >
             Have a project in mind or just want to connect? Let's create something amazing together.
           </motion.p>
@@ -41,10 +41,10 @@ const Contact: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.6 }}
-            className="space-y-8 bg-slate-100 p-8 rounded-2xl border border-slate-200 shadow-lg h-full"
+            className="space-y-8 bg-border-100 p-8 rounded-2xl border border-border-200 shadow-lg h-full"
           >
-            <h3 className="text-2xl font-bold text-slate-900">Contact Information</h3>
-            <p className="text-slate-600 leading-relaxed">
+            <h3 className="text-2xl font-bold text-heading-900">Contact Information</h3>
+            <p className="text-text-600 leading-relaxed">
               I'm actively seeking new opportunities to contribute my skills. Feel free to reach out via email or social media.
             </p>
             
@@ -52,10 +52,10 @@ const Contact: React.FC = () => {
               whileHover={{ x: 5 }}
               className="flex items-center gap-4 group cursor-pointer"
             >
-              <div className="p-4 bg-indigo-50 rounded-full text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+              <div className="p-4 bg-indigo-50 rounded-full text-primary group-hover:bg-primary group-hover:text-main-bg transition-colors duration-300">
                 <Mail size={24} />
               </div>
-              <a href={`mailto:${PERSONAL_INFO.email}`} className="text-lg text-slate-700 group-hover:text-primary transition-colors font-medium">
+              <a href={`mailto:${PERSONAL_INFO.email}`} className="text-lg text-text-700 group-hover:text-primary transition-colors font-medium">
                 {PERSONAL_INFO.email}
               </a>
             </motion.div>
@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
                 rel="noreferrer"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
-                className="p-4 bg-slate-50 rounded-full text-primary border border-primary shadow-[0_0_15px_rgba(0,255,238,0.3)] hover:bg-primary hover:text-slate-50 hover:shadow-[0_0_25px_rgba(0,255,238,0.5)] transition-all duration-300"
+                className="p-4 bg-main-bg rounded-full text-primary border border-primary shadow-[0_0_15px_rgba(0,255,238,0.3)] hover:bg-primary hover:text-main-bg hover:shadow-[0_0_25px_rgba(0,255,238,0.5)] transition-all duration-300"
                 aria-label="GitHub"
               >
                 <Github size={24} />
@@ -78,7 +78,7 @@ const Contact: React.FC = () => {
                 rel="noreferrer"
                 whileHover={{ scale: 1.1, rotate: -5 }}
                 whileTap={{ scale: 0.9 }}
-                className="p-4 bg-slate-50 rounded-full text-primary border border-primary shadow-[0_0_15px_rgba(0,255,238,0.3)] hover:bg-primary hover:text-slate-50 hover:shadow-[0_0_25px_rgba(0,255,238,0.5)] transition-all duration-300"
+                className="p-4 bg-main-bg rounded-full text-primary border border-primary shadow-[0_0_15px_rgba(0,255,238,0.3)] hover:bg-primary hover:text-main-bg hover:shadow-[0_0_25px_rgba(0,255,238,0.5)] transition-all duration-300"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={24} />
@@ -92,41 +92,41 @@ const Contact: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.6 }}
-            className="space-y-6 bg-slate-100 p-8 rounded-2xl border border-slate-200 shadow-lg h-full"
+            className="space-y-6 bg-border-100 p-8 rounded-2xl border border-border-200 shadow-lg h-full"
             onSubmit={(e) => e.preventDefault()}
           >
             <div>
-              <label htmlFor="name" className="block text-sm font-semibold text-slate-700 mb-2">Name</label>
+              <label htmlFor="name" className="block text-sm font-semibold text-text-700 mb-2">Name</label>
               <input 
                 type="text" 
                 id="name" 
-                className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 text-slate-900 transition-all placeholder:text-slate-500"
+                className="w-full px-4 py-3 rounded-lg bg-main-bg border border-border-200 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 text-heading-900 transition-all placeholder:text-text-500 hover:border-primary"
                 placeholder="Your Name"
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-semibold text-slate-700 mb-2">Email</label>
+              <label htmlFor="email" className="block text-sm font-semibold text-text-700 mb-2">Email</label>
               <input 
                 type="email" 
                 id="email" 
-                className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 text-slate-900 transition-all placeholder:text-slate-500"
+                className="w-full px-4 py-3 rounded-lg bg-main-bg border border-border-200 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 text-heading-900 transition-all placeholder:text-text-500 hover:border-primary"
                 placeholder="your@email.com"
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-semibold text-slate-700 mb-2">Message</label>
+              <label htmlFor="message" className="block text-sm font-semibold text-text-700 mb-2">Message</label>
               <textarea 
                 id="message" 
                 rows={4}
-                className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 text-slate-900 transition-all placeholder:text-slate-500"
+                className="w-full px-4 py-3 rounded-lg bg-main-bg border border-border-200 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 text-heading-900 transition-all placeholder:text-text-500 hover:border-primary"
                 placeholder="Hello, I'd like to talk about..."
               ></textarea>
             </div>
-            <motion.button 
+            <motion.button
               type="submit" 
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full px-6 py-3.5 bg-slate-50 text-primary font-bold text-lg rounded-lg shadow-soft hover:shadow-glow hover:bg-primary hover:text-slate-50 transition-all duration-300 flex items-center justify-center gap-2 border border-primary"
+              className="w-full px-6 py-3.5 bg-main-bg text-primary font-bold text-lg rounded-lg shadow-soft hover:shadow-glow hover:bg-primary hover:text-main-bg transition-all duration-300 flex items-center justify-center gap-2 border border-primary"
             >
               Send Message
               <Send size={20} />
@@ -135,7 +135,7 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="pt-12 text-center mt-12">
-          <p className="text-slate-700 text-sm font-medium">
+          <p className="text-text-700 text-sm font-medium">
             © {new Date().getFullYear()} {PERSONAL_INFO.name}. All rights reserved.
           </p>
         </div>
