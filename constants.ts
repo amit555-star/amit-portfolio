@@ -9,8 +9,8 @@ export const PERSONAL_INFO = {
   profileImage: "images/amits.png", 
   aboutImage: "images/about.jpg",
   socials: {
-    github: "https://github.com/amit555-star",
-    linkedin: "https://linkedin.com/in/amitkumarchy",
+    Github: "https://Github.com/amit555-star",
+    Linkedin: "https://Linkedin.com/in/amitkumarchy",
   }
 };
 
@@ -21,8 +21,8 @@ export const PROJECTS: Project[] = [
     tech: ["HTML", "CSS", "JavaScript"],
     description: "A comprehensive solution for personal finance management with built-in currency exchange features.",
     features: ["Real-time expense tracking", "Live currency exchange rates", "Mobile-first swipe-based UI"],
-    liveLink: "https://amit555-star.github.io/smart-expense-tracker/",
-    repoLink: "https://github.com/amit555-star/smart-expense-tracker",
+    liveLink: "https://amit555-star.Github.io/smart-expense-tracker/",
+    repoLink: "https://Github.com/amit555-star/smart-expense-tracker",
     image: "images/smart-expense-tracker.png"
   },
   {
@@ -31,8 +31,8 @@ export const PROJECTS: Project[] = [
     tech: ["HTML", "CSS", "Bootstrap", "JS"],
     description: "A responsive educational platform designed to deliver course content effectively with a focus on UI/UX.",
     features: ["Multi-page course layout", "Responsive dashboard", "Distraction-free reading"],
-    liveLink: "https://amit555-star.github.io/e-learning-full-website/",
-    repoLink: "https://github.com/amit555-star/e-learning-full-website",
+    liveLink: "https://amit555-star.Github.io/e-learning-full-website/",
+    repoLink: "https://Github.com/amit555-star/e-learning-full-website",
     image: "images/e-learning.png"
   },
   {
@@ -41,8 +41,8 @@ export const PROJECTS: Project[] = [
     tech: ["JavaScript", "DOM"],
     description: "An interactive 2-player game demonstrating logic implementation and DOM manipulation.",
     features: ["Turn-based logic", "Win detection", "Board reset functionality"],
-    liveLink: "https://amit555-star.github.io/TicTacToe/",
-    repoLink: "https://github.com/amit555-star/TicTacToe",
+    liveLink: "https://amit555-star.Github.io/TicTacToe/",
+    repoLink: "https://Github.com/amit555-star/TicTacToe",
     image: "images/tic-tac-toe.png"
   },
   {
@@ -51,8 +51,8 @@ export const PROJECTS: Project[] = [
     tech: ["HTML", "CSS"],
     description: "A pixel-perfect recreation of a popular food chain's digital menu focusing on modern CSS techniques.",
     features: ["Complex Grid layouts", "Hover effects", "Responsive design"],
-    liveLink: "https://amit555-star.github.io/pfcMenu-clone/",
-    repoLink: "https://github.com/amit555-star/pfcMenu-clone",
+    liveLink: "https://amit555-star.Github.io/pfcMenu-clone/",
+    repoLink: "https://Github.com/amit555-star/pfcMenu-clone",
     image: "images/pfc-menu-redesign.png"
   }
 ];
@@ -64,9 +64,10 @@ export const SKILLS: Skill[] = [
   { name: "React", category: "frontend" },
   { name: "Tailwind CSS", category: "frontend" },
   { name: "Bootstrap", category: "frontend" },
+  { name: "TypeScript", category: "language" },
   { name: "C Language", category: "language" },
   { name: "Python (Basic)", category: "language" },
-  { name: "Git & GitHub", category: "tools" },
+  { name: "Git & Github", category: "tools" },
   { name: "AWS (Basic)", category: "tools" },
 ];
 

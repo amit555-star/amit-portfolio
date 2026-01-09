@@ -62,24 +62,24 @@ const Contact: React.FC = () => {
 
             <div className="flex gap-4 pt-6">
               <motion.a
-                href={PERSONAL_INFO.socials.github}
+                href={PERSONAL_INFO.socials.Github}
                 target="_blank"
                 rel="noreferrer"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
                 className="p-4 bg-main-bg rounded-full text-primary border border-primary shadow-[0_0_15px_rgba(0,255,238,0.3)] hover:bg-primary hover:text-main-bg hover:shadow-[0_0_25px_rgba(0,255,238,0.5)] transition-all duration-300"
-                aria-label="GitHub"
+                aria-label="Github"
               >
                 <Github size={24} />
               </motion.a>
               <motion.a
-                href={PERSONAL_INFO.socials.linkedin}
+                href={PERSONAL_INFO.socials.Linkedin}
                 target="_blank"
                 rel="noreferrer"
                 whileHover={{ scale: 1.1, rotate: -5 }}
                 whileTap={{ scale: 0.9 }}
                 className="p-4 bg-main-bg rounded-full text-primary border border-primary shadow-[0_0_15px_rgba(0,255,238,0.3)] hover:bg-primary hover:text-main-bg hover:shadow-[0_0_25px_rgba(0,255,238,0.5)] transition-all duration-300"
-                aria-label="LinkedIn"
+                aria-label="Linkedin"
               >
                 <Linkedin size={24} />
               </motion.a>

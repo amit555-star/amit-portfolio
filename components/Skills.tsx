@@ -35,7 +35,7 @@ const Skills: React.FC = () => {
     "Bootstrap": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
     "C Language": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
     "Python (Basic)": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-    "Git & GitHub": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    "Git & Github": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     "AWS (Basic)": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
   };
 

@@ -28,7 +28,7 @@ Check out the live site here: [Portfolio](https://amit-portfolio-amber.vercel.ap
 - Fully **responsive design** for mobile, tablet, and desktop
 - **Smooth scrolling and animations** for interactive experience
 - **Contact form** integrated with EmailJS to send emails directly
-- **Projects section** with live demos and GitHub links
+- **Projects section** with live demos and Github links
 - **Tech stack section** showing skills clearly
 
 ---
@@ -56,7 +56,7 @@ Copy code
 - **Live Demo:** [https://amit-portfolio-amber.vercel.app/](https://amit-portfolio-amber.vercel.app/)
 - **Technologies:** React, TypeScript, Tailwind CSS, Framer Motion
 - **Description:** A personal portfolio showcasing projects, skills, and a contact form integrated with EmailJS. Fully responsive, smooth animations, and deployed on Vercel.
-- **GitHub Repo:** [https://github.com/YOUR_USERNAME/portfolio](https://github.com/YOUR_USERNAME/portfolio)
+- **Github Repo:** [https://Github.com/YOUR_USERNAME/portfolio](https://Github.com/YOUR_USERNAME/portfolio)
 
 > *You can add additional projects here in the same format.*
 
@@ -66,7 +66,7 @@ Copy code
 To run the project locally:
 
 1. Clone the repository:
-git clone https://github.com/amit555-star/amit-portfolio
+git clone https://Github.com/amit555-star/amit-portfolio
 
 2. Navigate to the project folder:
 cd portfolio
@@ -85,6 +85,6 @@ You can reach me via the contact form on the portfolio or directly at:
 
 Email: chaudahry004@gmail.com
 
-LinkedIn: Amit Kumar Chaudhary
+Linkedin: Amit Kumar Chaudhary
 
-GitHub: @amit555-star
+Github: @amit555-star

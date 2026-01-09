@@ -147,10 +147,10 @@ const Hero: React.FC = () => {
             </p>
             
             <div className="flex gap-4 mb-10">
-              <a href={PERSONAL_INFO.socials.linkedin} target="_blank" rel="noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full bg-border-100 text-primary border border-primary shadow-[0_0_15px_rgba(0,255,238,0.3)] hover:bg-primary hover:text-main-bg hover:shadow-[0_0_20px_rgba(0,255,238,0.5)] transition-all duration-300">
+              <a href={PERSONAL_INFO.socials.Linkedin} target="_blank" rel="noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full bg-border-100 text-primary border border-primary shadow-[0_0_15px_rgba(0,255,238,0.3)] hover:bg-primary hover:text-main-bg hover:shadow-[0_0_20px_rgba(0,255,238,0.5)] transition-all duration-300">
                 <Linkedin size={20} />
               </a>
-              <a href={PERSONAL_INFO.socials.github} target="_blank" rel="noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full bg-border-100 text-primary border border-primary shadow-[0_0_15px_rgba(0,255,238,0.3)] hover:bg-primary hover:text-main-bg hover:shadow-[0_0_20px_rgba(0,255,238,0.5)] transition-all duration-300">
+              <a href={PERSONAL_INFO.socials.Github} target="_blank" rel="noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full bg-border-100 text-primary border border-primary shadow-[0_0_15px_rgba(0,255,238,0.3)] hover:bg-primary hover:text-main-bg hover:shadow-[0_0_20px_rgba(0,255,238,0.5)] transition-all duration-300">
                 <Github size={20} />
               </a>
             </div>
