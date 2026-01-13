@@ -215,7 +215,7 @@ const Hero: React.FC = () => {
               }}
               src={PERSONAL_INFO.profileImage}
               alt="Amit Kumar Chaudhary" 
-              className="w-[60vw] md:w-[28vw] max-w-[400px] aspect-square mr-6 rounded-full object-cover relative z-10 bg-indigo-50"
+              className="w-[60vw] md:w-[28vw] max-w-[400px] aspect-square mr-6 border-2 border-primary rounded-full object-cover relative z-10 bg-indigo-50"
             />
             </motion.div>
         </div>

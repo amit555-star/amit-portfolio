@@ -8,7 +8,7 @@ const Skills: React.FC = () => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1, // Stagger for one-by-one effect
+        staggerChildren: 0.3, // Stagger for one-by-one effect
         delayChildren: 0.2
       }
     }
@@ -20,7 +20,7 @@ const Skills: React.FC = () => {
       opacity: 1, 
       scale: 0.8,
       transition: {
-        duration: 0.6,
+        duration: 0.8,
         ease: "easeOut" // Smooth zoom
       }
     }

@@ -14,6 +14,7 @@ const Contact: React.FC = () => {
             viewport={{ once: false }}
             className="text-3xl md:text-4xl font-bold text-heading-900 mb-4"
           >
+            {/*---------- Get In Touch H2 and Para ----------- */}
             Get In Touch
           </motion.h2>
           <motion.div 
@@ -35,12 +36,13 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
-          {/* Contact Info */}
+
+          {/*---------- Contact Info Box ----------- */}
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8 }}
             className="space-y-8 bg-border-100 p-8 rounded-2xl border border-border-200 shadow-lg h-full"
           >
             <h3 className="text-2xl font-bold text-heading-900">Contact Information</h3>
@@ -86,7 +88,7 @@ const Contact: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Form */}
+          {/*========= Form========== */}
           <motion.form 
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}

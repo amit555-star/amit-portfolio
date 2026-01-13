@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.6 }}
             className="text-text-600 max-w-2xl mx-auto"
           >
             A selection of my recent work focusing on functionality and design.

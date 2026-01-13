@@ -26,12 +26,13 @@ const Education: React.FC = () => {
         </div>
 
         <div className="max-w-4xl mx-auto space-y-8 relative">
-           {/* Vertical Line Animation */}
+
+          {/*============Vertical Line Animation ============*/}
           <motion.div 
-            initial={{ height: 0 }}
-            whileInView={{ height: '100%' }}
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
+            transition={{ delay: 0.6 }}
             className="absolute left-4 top-4 bottom-4 w-0.5 bg-border-200 hidden md:block origin-top"
           ></motion.div>
 
@@ -41,12 +42,12 @@ const Education: React.FC = () => {
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false, margin: "-50px" }}
-              transition={{ delay: index * 0.2, duration: 0.5, type: "spring", stiffness: 50 }}
+              transition={{ delay: index * 0.3, duration: 0.3}}
               whileHover={{ 
-                x: 10,
+                x: 20,
                 boxShadow: "0 0 20px rgba(0, 255, 238, 0.4), 0 15px 25px -5px rgba(0, 255, 238, 0.3)"
               }}
-              className="relative md:ml-12 bg-border-100 p-6 md:p-8 rounded-xl border border-border-200 shadow-sm hover:border-primary transition-all duration-300"
+              className="relative md:ml-12 bg-border-100 p-6 md:p-8 rounded-xl border border-border-200 shadow-sm hover:border-primary transition-all duration-100"
             >
               {/* Dot on line */}
               <motion.div 
