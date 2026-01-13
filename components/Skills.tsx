@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, Variants } from 'framer-motion';
+import { easeInOut, motion, Variants } from 'framer-motion';
 import { SKILLS } from '../constants';
 
 const Skills: React.FC = () => {
@@ -20,8 +20,8 @@ const Skills: React.FC = () => {
       opacity: 1, 
       scale: 0.8,
       transition: {
-        duration: 0.8,
-        ease: "easeOut" // Smooth zoom
+        duration: 0.3,
+        ease: "easeInOut" // Smooth zoom
       }
     }
   };
@@ -47,7 +47,7 @@ const Skills: React.FC = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
             className="text-3xl md:text-4xl font-bold text-heading-900 mb-4"
           >
             Technical Skills
@@ -56,7 +56,7 @@ const Skills: React.FC = () => {
             initial={{ width: 0 }}
             whileInView={{ width: 80 }}
             viewport={{ once: false }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.3}}
             className="w-20 h-1 bg-primary mx-auto rounded-full"
           ></motion.div>
         </div>

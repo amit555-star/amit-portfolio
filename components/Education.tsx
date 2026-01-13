@@ -32,17 +32,17 @@ const Education: React.FC = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay: 0.3 }}
             className="absolute left-4 top-4 bottom-4 w-0.5 bg-border-200 hidden md:block origin-top"
           ></motion.div>
 
           {EDUCATION.map((edu, index) => (
             <motion.div
-              key={edu.id}
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, margin: "-50px" }}
-              transition={{ delay: index * 0.3, duration: 0.3}}
+              // key={edu.id}
+              // initial={{ opacity: 0, x: -50 }}
+              // whileInView={{ opacity: 1, x: 0 }}
+              // viewport={{ once: false, margin: "-50px" }}
+              // transition={{ delay: index * 0.3, duration: 0.3}}
               whileHover={{ 
                 x: 20,
                 boxShadow: "0 0 20px rgba(0, 255, 238, 0.4), 0 15px 25px -5px rgba(0, 255, 238, 0.3)"

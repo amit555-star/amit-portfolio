@@ -35,9 +35,9 @@ const Contact: React.FC = () => {
           </motion.p>
         </div>
 
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+        <div className="max-w-4xl mx-auto space-y-12 md:space-y-0 md:max-w-5xl md:grid md:grid-cols-2 md:gap-12">
 
-          {/*---------- Contact Info Box ----------- */}
+          {/*---------- Contact Info Box left ----------- */}
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -52,12 +52,12 @@ const Contact: React.FC = () => {
             
             <motion.div 
               whileHover={{ x: 5 }}
-              className="flex items-center gap-4 group cursor-pointer"
+              className="flex items-center gap-4 flex-wrap group cursor-pointer"
             >
               <div className="p-4 bg-indigo-50 rounded-full text-primary group-hover:bg-primary group-hover:text-main-bg transition-colors duration-300">
                 <Mail size={24} />
               </div>
-              <a href={`mailto:${PERSONAL_INFO.email}`} className="text-lg text-text-700 group-hover:text-primary transition-colors font-medium">
+              <a href={`mailto:${PERSONAL_INFO.email}`} className="text-lg text-text-700 group-hover:text-primary transition-colors font-medium break-all">
                 {PERSONAL_INFO.email}
               </a>
             </motion.div>
@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
             </div>
           </motion.div>
 
-          {/*========= Form========== */}
+          {/*========= Form Box  ========== */}
           <motion.form 
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
