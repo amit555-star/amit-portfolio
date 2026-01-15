@@ -1,5 +1,5 @@
 import React from 'react';
-import { delay, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { PERSONAL_INFO } from '../constants';
 import { Code, Monitor } from 'lucide-react';
 
