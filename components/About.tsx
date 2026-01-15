@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { delay, motion } from 'framer-motion';
 import { PERSONAL_INFO } from '../constants';
 import { Code, Monitor } from 'lucide-react';
 
@@ -27,7 +27,7 @@ const About: React.FC = () => {
               initial={{ width: 0 }}
               whileInView={{ width: 80 }}
               viewport={{ once: false }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
               className="h-1 bg-primary mx-auto rounded-full"
             ></motion.div>
           </div>
@@ -41,9 +41,9 @@ const About: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="relative group"
             >
-              <div className="absolute top-4 left-4 w-full h-full border-2 border-primary/20 rounded-2xl -z-10 transform translate-x-2 translate-y-2 transition-transform duration-500 group-hover:translate-x-4 group-hover:translate-y-4"></div>
+              <div className="absolute top-4 left-4 w-full h-full border-primary transform transition-transform duration-500 group-hover:translate-x-4 group-hover:translate-y-4"></div>
               {/* Updated Glow to use only primary color */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary/40 to-heading-900/0 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary/40 to-heading-900/0 rounded-2xl blur opacity-20 group-hover:opacity-70 transition duration-1000 group-hover:duration-200"></div>
               <img 
                 src="images/about.jpg" 
                 alt="Profile" 
@@ -54,34 +54,35 @@ const About: React.FC = () => {
             {/* Text Section */}
             <div className="space-y-6">
               <motion.h3 
-                initial={{ opacity: 0, x: 20 }}
+                initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: false }}
-                transition={{ delay: 0.2 }}
+                transition={{ duration: 0.4, delay: 0.3}}
                 className="text-2xl font-bold text-heading-900"
               >
                 A journey from <span className="text-primary">Sales</span> to <span className="text-primary">Development</span>
               </motion.h3>
               
               <motion.p 
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false }}
-                transition={{ delay: 0.3 }}
+                transition={{ duration: 0.8 }}
                 className="text-text-600 leading-relaxed text-lg"
               >
                 {PERSONAL_INFO.about}
               </motion.p>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 pt-4">
+                {/* Left card */}
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: false }}
-                  transition={{ delay: 0.4 }}
+                  transition={{ duration: 0.4, ease: "linear" }}
                   whileHover={{ 
-                    y: -5,
-                    boxShadow: "0 0 20px rgba(0, 255, 238, 0.4), 0 15px 25px -5px rgba(0, 255, 238, 0.3)"
+                    boxShadow: "0 0 20px rgba(0, 255, 238, 0.4), 0 15px 25px -5px rgba(0, 255, 238, 0.3)",
+                    y: -6
                   }}
                   className="p-6 bg-border-100 rounded-xl border border-border-200 shadow-sm hover:border-primary transition-all duration-300"
                 >
@@ -90,14 +91,15 @@ const About: React.FC = () => {
                   <p className="text-sm text-text-600">Pixel-perfect mobile-first designs</p>
                 </motion.div>
 
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                {/* Right card */}
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: false }}
-                  transition={{ delay: 0.5 }}
-                  whileHover={{ 
-                  y: -5,
-                  boxShadow: "0 0 20px rgba(0, 255, 238, 0.4), 0 15px 25px -5px rgba(0, 255, 238, 0.3)"
+                  transition={{ duration: 0.4, ease: "linear" }}
+                  whileHover={{
+                    boxShadow: "0 0 20px rgba(0, 255, 238, 0.4), 0 15px 25px -5px rgba(0, 255, 238, 0.3)",
+                    y: -6
                   }}
                   className="p-6 bg-border-100 rounded-xl border border-border-200 shadow-sm hover:border-primary transition-all duration-300"
                 >

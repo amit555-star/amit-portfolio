@@ -42,20 +42,6 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Letter animation variants
-  const nameVariants: Variants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: (i: number) => ({
-      opacity: 1,
-      x: 0,
-      transition: {
-        delay: i * 0.1,
-        type: "spring",
-        stiffness: 120
-      }
-    })
-  };
-
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${
@@ -67,9 +53,19 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         <motion.a 
           href="#home" 
-          className="text-3xl md:text-4xl font-bold text-heading-900 tracking-tight flex items-center gap-1 group"
-          whileHover="hover"
+          className="group text-3xl md:text-4xl font-bold text-heading-900 tracking-tight inline-block"
+          whileHover={{ scale: 1.05 }}
+          transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
+          Amit{" "}
+        <span className="text-primary 
+        transition-all duration-300 
+        [text-shadow:0_0_25px_#00ffee]
+        group-hover:[text-shadow:0_0_25px_#00ffee]
+        ">
+          Chaudhary.
+        </span>
+
           <motion.div
             variants={{
               hover: { scale: 1.05 }
@@ -77,32 +73,6 @@ const Navbar: React.FC = () => {
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
             className="flex items-center gap-1"
           >
-            <div className="flex overflow-hidden">
-              {['A', 'm', 'i', 't'].map((letter, i) => (
-                <motion.span
-                  key={i}
-                  custom={i}
-                  initial="hidden"
-                  animate="visible"
-                  variants={nameVariants}
-                  className="inline-block transition-colors duration-300"
-                >
-                  {letter}
-                </motion.span>
-              ))}
-            </div>
-            <motion.span 
-              initial={{ opacity: 0, x: -10 }}
-              animate={{ 
-                opacity: 1, 
-                x: 0,
-                textShadow: "0 0 25px #00ffee"
-              }}
-              transition={{ delay: 0.5, duration: 0.5 }}
-              className="text-primary"
-            > 
-              Chaudhary.
-            </motion.span>
           </motion.div>
         </motion.a>
 
@@ -120,7 +90,7 @@ const Navbar: React.FC = () => {
               }`}
             >
               {link.name}
-              <span className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300 ${
+              <span className={`absolute -bottom-1 border-b-4 border-primary left-0 h-0.5 bg-primary transition-all duration-300 ${
                 activeSection === link.name ? 'w-full' : 'w-0 group-hover:w-full'
               }`}></span>
             </motion.a>

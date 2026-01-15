@@ -3,22 +3,24 @@ import { easeInOut, motion, Variants } from 'framer-motion';
 import { SKILLS } from '../constants';
 
 const Skills: React.FC = () => {
-  const container: Variants = {
-    hidden: { opacity: 0 },
+  const container: Variants = {   // Main scroll logic
+    hidden: { opacity: 1 },      
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3, // Stagger for one-by-one effect
-        delayChildren: 0.2
+        // staggerChildren: 0.3, // Stagger for one-by-one effect
+        // delayChildren: 0.2
+        duration: 0.6,
+        ease: "easeInOut"
       }
     }
   };
 
-  const item: Variants = {
-    hidden: { opacity: 0, scale: 0.5 }, // Start zoomed out
+  const item: Variants = {   
+    hidden: { opacity: 0, scale: 0.9 }, // scroll animation for each card
     show: { 
       opacity: 1, 
-      scale: 0.8,
+      scale: 0.7,
       transition: {
         duration: 0.3,
         ease: "easeInOut" // Smooth zoom
@@ -52,15 +54,18 @@ const Skills: React.FC = () => {
           >
             Technical Skills
           </motion.h2>
+
+          {/*======= Underline Bar====== */}
           <motion.div 
             initial={{ width: 0 }}
             whileInView={{ width: 80 }}
             viewport={{ once: false }}
-            transition={{ duration: 0.3}}
+            transition={{ duration: 0.8}}
             className="w-20 h-1 bg-primary mx-auto rounded-full"
           ></motion.div>
         </div>
 
+        {/*======== Skills Container======== */}
         <motion.div
           variants={container}
           initial="hidden"
@@ -73,7 +78,7 @@ const Skills: React.FC = () => {
               key={skill.name}
               variants={item}
               whileHover={{ 
-                scale: 1.05, 
+                scale: 0.8, 
                 rotate: 1,
                 // Cyan outline glow + Cyan bottom shadow
                 boxShadow: "0 0 20px rgba(0, 255, 238, 0.4), 0 15px 25px -5px rgba(0, 255, 238, 0.3)"

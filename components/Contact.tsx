@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8 }}
             className="space-y-6 bg-border-100 p-8 rounded-2xl border border-border-200 shadow-lg h-full"
             onSubmit={(e) => e.preventDefault()}
           >

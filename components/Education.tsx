@@ -38,45 +38,93 @@ const Education: React.FC = () => {
 
           {EDUCATION.map((edu, index) => (
             <motion.div
-              // key={edu.id}
-              // initial={{ opacity: 0, x: -50 }}
-              // whileInView={{ opacity: 1, x: 0 }}
-              // viewport={{ once: false, margin: "-50px" }}
-              // transition={{ delay: index * 0.3, duration: 0.3}}
-              whileHover={{ 
+              key={edu.id}
+              whileHover={{
                 x: 20,
-                boxShadow: "0 0 20px rgba(0, 255, 238, 0.4), 0 15px 25px -5px rgba(0, 255, 238, 0.3)"
+                boxShadow:
+                  "0 0 20px rgba(0, 255, 238, 0.4), 0 15px 25px -5px rgba(0, 255, 238, 0.3)",
               }}
-              className="relative md:ml-12 bg-border-100 p-6 md:p-8 rounded-xl border border-border-200 shadow-sm hover:border-primary transition-all duration-100"
+              className="
+                relative md:ml-12
+                bg-border-100
+                p-6 md:p-8
+                rounded-xl
+                border border-border-200
+                shadow-sm
+                hover:border-primary
+                transition-all duration-200
+              "
             >
-              {/* Dot on line */}
-              <motion.div 
+              {/* Timeline Dot (animated) */}
+              <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: false }}
-                transition={{ delay: 0.2 + (index * 0.2), type: "spring" }}
-                className="absolute -left-[55px] top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-main-bg border-4 border-border-200 hidden md:flex items-center justify-center z-10"
+                transition={{
+                  delay: 0.3 + index * 0.2,
+                  type: "spring",
+                  stiffness: 200,
+                }}
+                className="
+                  absolute -left-[55px] top-1/2 -translate-y-1/2
+                  w-6 h-6
+                  rounded-full
+                  bg-main-bg
+                  border-4 border-border-200
+                  hidden md:flex
+                  items-center justify-center
+                  z-10
+                "
               >
-                  <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-primary rounded-full" />
               </motion.div>
 
+              {/* Content */}
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                {/* Left */}
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-indigo-50 rounded-lg text-primary group-hover:scale-110 transition-transform">
+                  <div className="p-3 bg-indigo-50 rounded-lg text-primary">
                     <GraduationCap size={24} />
                   </div>
+
                   <div>
                     <h3 className="text-xl font-bold text-heading-900">
-                        {edu.degree}
+                      {edu.degree}
                     </h3>
-                    <p className="text-lg text-text-600 mt-1 font-medium">{edu.institution}</p>
-                    <span className="inline-block mt-2 px-3 py-1 bg-main-bg text-xs font-semibold tracking-wide rounded-full text-text-500 border border-border-200">
+
+                    <p className="text-lg text-text-600 mt-1 font-medium">
+                      {edu.institution}
+                    </p>
+
+                    <span
+                      className="
+                        inline-block mt-2
+                        px-3 py-1
+                        bg-main-bg
+                        text-xs font-semibold tracking-wide
+                        rounded-full
+                        text-text-500
+                        border border-border-200
+                      "
+                    >
                       {edu.status}
                     </span>
                   </div>
                 </div>
-                
-                <div className="flex items-center gap-2 text-sm font-bold text-primary bg-main-bg px-4 py-2 rounded-lg border border-border-200 whitespace-nowrap shadow-sm">
+
+                {/* Right */}
+                <div
+                  className="
+                    flex items-center gap-2
+                    text-sm font-bold text-primary
+                    bg-main-bg
+                    px-4 py-2
+                    rounded-lg
+                    border border-border-200
+                    whitespace-nowrap
+                    shadow-sm
+                  "
+                >
                   <Calendar size={16} />
                   {edu.year}
                 </div>
