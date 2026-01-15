@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
             whileInView={{ width: 80 }}
             viewport={{ once: false }}
             transition={{ duration: 0.8 }}
-            className="w-20 h-1 bg-primary mx-auto rounded-full"
+            className="h-1 bg-primary mx-auto rounded-full"
           ></motion.div>
           <motion.p 
             initial={{ opacity: 0 }}

@@ -1,33 +1,9 @@
 import React from 'react';
-import { easeInOut, motion, Variants } from 'framer-motion';
+import { motion} from 'framer-motion';
 import { SKILLS } from '../constants';
 
 const Skills: React.FC = () => {
-  const container: Variants = {   // Main scroll logic
-    hidden: { opacity: 1 },      
-    show: {
-      opacity: 1,
-      transition: {
-        // staggerChildren: 0.3, // Stagger for one-by-one effect
-        // delayChildren: 0.2
-        duration: 0.6,
-        ease: "easeInOut"
-      }
-    }
-  };
-
-  const item: Variants = {   
-    hidden: { opacity: 0, scale: 0.9 }, // scroll animation for each card
-    show: { 
-      opacity: 1, 
-      scale: 0.7,
-      transition: {
-        duration: 0.3,
-        ease: "easeInOut" // Smooth zoom
-      }
-    }
-  };
-
+  
   const skillIcons: { [key: string]: string } = {
     "HTML5": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
     "CSS3": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
@@ -61,24 +37,18 @@ const Skills: React.FC = () => {
             whileInView={{ width: 80 }}
             viewport={{ once: false }}
             transition={{ duration: 0.8}}
-            className="w-20 h-1 bg-primary mx-auto rounded-full"
+            className="h-1 bg-primary mx-auto rounded-full"
           ></motion.div>
         </div>
 
         {/*======== Skills Container======== */}
-        <motion.div
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, margin: "-50px" }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto"
-        >
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {SKILLS.map((skill) => (
             <motion.div
               key={skill.name}
-              variants={item}
+              initial={{ scale: 0.8 }}
               whileHover={{ 
-                scale: 0.8, 
+                scale: 0.7, 
                 rotate: 1,
                 // Cyan outline glow + Cyan bottom shadow
                 boxShadow: "0 0 20px rgba(0, 255, 238, 0.4), 0 15px 25px -5px rgba(0, 255, 238, 0.3)"
@@ -106,7 +76,7 @@ const Skills: React.FC = () => {
               </span>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

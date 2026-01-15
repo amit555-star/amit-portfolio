@@ -57,7 +57,7 @@ const About: React.FC = () => {
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: false }}
-                transition={{ duration: 0.4, delay: 0.3}}
+                transition={{ duration: 0.3, delay: 0.2}}
                 className="text-2xl font-bold text-heading-900"
               >
                 A journey from <span className="text-primary">Sales</span> to <span className="text-primary">Development</span>
@@ -76,10 +76,6 @@ const About: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 pt-4">
                 {/* Left card */}
                 <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: false }}
-                  transition={{ duration: 0.4, ease: "linear" }}
                   whileHover={{ 
                     boxShadow: "0 0 20px rgba(0, 255, 238, 0.4), 0 15px 25px -5px rgba(0, 255, 238, 0.3)",
                     y: -6
@@ -93,10 +89,6 @@ const About: React.FC = () => {
 
                 {/* Right card */}
                 <motion.div
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: false }}
-                  transition={{ duration: 0.4, ease: "linear" }}
                   whileHover={{
                     boxShadow: "0 0 20px rgba(0, 255, 238, 0.4), 0 15px 25px -5px rgba(0, 255, 238, 0.3)",
                     y: -6
