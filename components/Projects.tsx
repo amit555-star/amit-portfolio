@@ -54,7 +54,7 @@ const Projects: React.FC = () => {
               >
                 <div className="relative group w-full">
                   {/* Decorative Border Box */}
-                  <div className="absolute top-4 left-4 w-full h-full border-primary transformtransition-transform duration-500 group-hover:translate-x-4 group-hover:translate-y-4"></div>
+                  <div className="absolute top-4 left-4 w-full h-full border-primary transfor mtransition-transform duration-500 group-hover:translate-x-4 group-hover:translate-y-4"></div>
                   
                   {/* Glow Effect - Removed Purple */}
                   <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-border-100/10 rounded-2xl blur opacity-20 group-hover:opacity-70 transition duration-1000 group-hover:duration-200"></div>
