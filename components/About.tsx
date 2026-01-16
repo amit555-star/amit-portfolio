@@ -54,7 +54,7 @@ const About: React.FC = () => {
             {/* Text Section */}
             <div className="space-y-6">
               <motion.h3 
-                initial={{ opacity: 0, x: 50 }}
+                initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.4, delay: 0.5}}
