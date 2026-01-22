@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="bg-[#131313] pt-24 pb-24 border-t border-border-200 overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mt-16 mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
