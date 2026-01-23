@@ -157,7 +157,7 @@ const Hero: React.FC = () => {
 
             <div className="flex flex-wrap items-center gap-4">
               <a 
-                href="/docs/Amit-Software-updated.pdf" 
+                href="/docs/Amit-Software.pdf" 
                 download ="Amit_Kumar_Chaudhary_Resume.pdf"
                 className="flex items-center gap-2 px-6 py-3 bg-primary text-indigo-50 rounded-lg text-main-bg font-bold shadow-soft hover:shadow-glow hover:bg-main-bg hover:text-primary transition-all duration-300 transform hover:-translate-y-0.5 border border-primary"
               >
