@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Github, Linkedin, Send } from 'lucide-react';
+import { Mail, Github, Linkedin, Send } from 'lucide-react'; 
 import { PERSONAL_INFO } from '../constants';
 
 const Contact: React.FC = () => {
