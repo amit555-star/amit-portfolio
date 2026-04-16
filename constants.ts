@@ -4,7 +4,7 @@ export const PERSONAL_INFO = {
   name: "Amit Kumar Chaudhary",
   role: "Frontend Developer",
   tagline: "I'm a", // Used as prefix for typing animation
-  about: "Frontend-focused web developer building responsive, user-friendly interfaces with HTML, CSS, JavaScript, React, and Tailwind. Passionate about clean UI, smooth interactions, and continuous learning.",
+  about: "Aspiring Software Developer with hands-on experience building responsive web applications using HTML, CSS, JavaScript, React, and Tailwind CSS. Currently strengthening skills in Python, Java, APIs, and software development fundamentals. Fast learner with strong problem-solving ability and eagerness to grow in an internship or entry-level software development role.",
   email: "chaudahry004@gmail.com",
   profileImage: "images/amits.png", 
   aboutImage: "images/about.jpg",
