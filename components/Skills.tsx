@@ -14,7 +14,7 @@ const Skills: React.FC = () => {
     "C Language": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
     "Python (Basic)": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
     "Git & Github": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-    "AWS (Basic)": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+    "AWS (Basic)": "https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
   };
 
   return (
